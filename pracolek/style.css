@@ -72,7 +72,7 @@
   /* Typography Scale: https://www.modularscale.com/?1&rem&1.2 */
 
 html {
-	font-size: 100%; /* 1rem = 16px */
+	font-size: 16px; /* 1rem = 16px */
 	scroll-behavior: smooth;
 }
 
@@ -284,12 +284,6 @@ padding: 0 0 40vh 0
   font-weight: normal;
 }
 
-/* pracolek 
-h1, h2, h3, h4, h5, h6 {
-    color: #3D7BB5 !important;
-}
-*/
-/* Pračolek*/
 h1, h2, h3, h4, h5, h6 {
   color: #f1b143 !important;
 }
@@ -303,3 +297,22 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content {
   font-size: 1.4rem;
 }
+
+.wp-block-pullquote blockquote p {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding-right: 9em;
+    padding-left: 9em;
+}
+@media only screen and (max-width: 1024px) {
+.wp-block-pullquote blockquote p {
+    padding-right: 2em;
+    padding-left: 2em;
+}}
+@media only screen and (max-width: 700px) {
+.wp-block-pullquote blockquote p {
+    font-size: smaller;
+    padding-right: 0px;
+    padding-left: 0px;
+}}
