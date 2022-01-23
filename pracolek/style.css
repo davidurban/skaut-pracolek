@@ -159,6 +159,18 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+   font-size: 3.5rem;
+ }
+
+ h3 {
+   font-size: 3rem;
+ }
+
+ h4 {
+   font-size: 2rem;
+ }
+
 /* Nastavení písma Skaut pro podnadpisy */ 
 
 h2, h3, h4, h5, h6 {
@@ -299,12 +311,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wp-block-pullquote blockquote p {
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
-    padding-right: 9em;
-    padding-left: 9em;
-}
+   font-size: inherit;
+   line-height: inherit;
+   margin: 0;
+   padding-right: 9em;
+   padding-left: 9em;
+   font-weight: 400;
+   font-style: italic;
+   letter-spacing: 0.01rem;
+   font-size: 1.2rem;
+ }
+
+ .wp-block-pullquote blockquote cite {
+   color: #0a567f;
+   font-size: 1rem;
+ }
+ 
 @media only screen and (max-width: 1024px) {
 .wp-block-pullquote blockquote p {
     padding-right: 2em;
